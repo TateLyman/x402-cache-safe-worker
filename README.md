@@ -10,6 +10,9 @@ Cloudflare Worker starter for x402-style payment gates that keeps the web bounda
 
 This repo is intentionally a starter, not a drop-in facilitator. It never includes real keys, never signs payments, and never settles funds.
 
+Public implementation guide:
+https://tateprograms.com/cloudflare-x402-worker.html
+
 ## Why This Exists
 
 x402 and AgentCore-style payment agents make paid API calls look like normal HTTP. That means normal web behavior matters: CORS, cache policy, `Vary` headers, resource binding, and idempotency become launch controls.
@@ -63,6 +66,7 @@ Before production, replace the placeholder `X402_*` values and wire actual facil
 
 ## Related
 
+- Cloudflare x402 Worker guide: https://tateprograms.com/cloudflare-x402-worker.html
 - x402 Surface Check: https://www.npmjs.com/package/x402-surface-check
 - x402 Attack Map: https://tateprograms.com/x402-attack-map-2026.html
 - x402 CORS Fix: https://tateprograms.com/x402-cors-fix.html
