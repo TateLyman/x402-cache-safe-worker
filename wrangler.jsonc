@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "x402-cache-safe-worker",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-05-16",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "X402_RESOURCE_ORIGIN": "https://example.com",
+    "X402_PAY_TO": "0x0000000000000000000000000000000000000000",
+    "X402_ASSET": "0x0000000000000000000000000000000000000000",
+    "X402_NETWORK": "base-sepolia",
+    "X402_AMOUNT_ATOMIC": "10000"
+  }
+}
